@@ -16,11 +16,21 @@ public static class SeasonExtensions
 
     public static Season Shift(this Season season, int shift)
     {
-        return 0;
+        
+        var enumMemberToValue = (int)season;
+        var numberOfSeasons = SeasonsToMonths.Count;
+
+        var shiftedValue = (enumMemberToValue + shift + numberOfSeasons) % numberOfSeasons;
+
+        var convertedToEnum = (Season)shiftedValue;
+        return convertedToEnum;
     }
 
     public static bool Contains(this Season season, DateTime date)
     {
-        return false;
+        var monthsOfSeason = SeasonsToMonths[season];
+        var monthFromDate = (Month)date.Month; 
+
+        return monthsOfSeason.Contains(monthFromDate);
     }
 }

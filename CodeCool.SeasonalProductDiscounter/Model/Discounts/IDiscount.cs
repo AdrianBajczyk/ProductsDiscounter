@@ -1,4 +1,5 @@
 ﻿using CodeCool.SeasonalProductDiscounter.Model.Products;
+using CodeCool.SeasonalProductDiscounter.Extensions;
 
 namespace CodeCool.SeasonalProductDiscounter.Model.Discounts;
 

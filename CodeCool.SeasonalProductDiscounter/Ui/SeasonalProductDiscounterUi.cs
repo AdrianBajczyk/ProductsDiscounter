@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using CodeCool.SeasonalProductDiscounter.Model.Offers;
 using CodeCool.SeasonalProductDiscounter.Service.Discounts;
+using CodeCool.SeasonalProductDiscounter.Service.Logger;
 using CodeCool.SeasonalProductDiscounter.Service.Products;
 
 namespace CodeCool.SeasonalProductDiscounter.Ui;
@@ -10,44 +11,47 @@ public class SeasonalProductDiscounterUi
     private readonly IProductProvider _productProvider;
     private readonly IDiscountProvider _discountProvider;
     private readonly IDiscounterService _discounterService;
+    private readonly ILogger _logger;
 
     public SeasonalProductDiscounterUi(
         IProductProvider productProvider,
         IDiscountProvider discountProvider,
-        IDiscounterService discounterService)
+        IDiscounterService discounterService,
+        ILogger logger)
     {
         _productProvider = productProvider;
         _discountProvider = discountProvider;
         _discounterService = discounterService;
+        _logger = logger;
     }
 
     public void Run()
     {
-        Console.WriteLine("Welcome to Seasonal Product Discounter!");
-        Console.WriteLine();
+        _logger.LogInfo("Welcome to Seasonal Product Discounter!");
+        _logger.NewLine();
 
         PrintCatalog();
         PrintPromotions();
 
-        Console.WriteLine("Enter a date to see which products are discounted on that date:");
+        _logger.LogInfo("Enter a date to see which products are discounted on that date:");
         var date = GetDate();
-        Console.WriteLine();
+        _logger.NewLine();
 
         PrintOffers(date);
     }
 
     private void PrintCatalog()
     {
-        Console.WriteLine("Current product catalog (without any discounts):");
+        _logger.LogInfo("Current product catalog (without any discounts):");
         PrintEnumerable(_productProvider.Products);
-        Console.WriteLine();
+        _logger.NewLine();
     }
 
     private void PrintPromotions()
     {
-        Console.WriteLine("This year's promotions:");
+        _logger.LogInfo("This year's promotions:");
         PrintEnumerable(_discountProvider.Discounts);
-        Console.WriteLine();
+        _logger.NewLine();
     }
 
     private void PrintOffers(DateTime date)
@@ -71,7 +75,7 @@ public class SeasonalProductDiscounterUi
         return discounted;
     }
 
-    private static DateTime GetDate()
+    private DateTime GetDate()
     {
         string? input = null;
         DateTime date;
@@ -80,7 +84,7 @@ public class SeasonalProductDiscounterUi
         {
             if (input != null)
             {
-                Console.WriteLine("Invalid date!");
+                _logger.LogError("Invalid date!");
             }
 
             input = Console.ReadLine();
@@ -89,11 +93,11 @@ public class SeasonalProductDiscounterUi
         return date;
     }
 
-    private static void PrintEnumerable(IEnumerable enumerable)
+    private void PrintEnumerable(IEnumerable enumerable)
     {
         foreach (var element in enumerable)
         {
-            Console.WriteLine(element);
+            _logger.LogInfo(element.ToString());
         }
     }
 }
