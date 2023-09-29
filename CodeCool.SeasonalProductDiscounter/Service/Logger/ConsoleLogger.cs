@@ -4,13 +4,13 @@ public class ConsoleLogger : ILogger
 {
     public void LogError(string message)
     {
-        Console.BackgroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Red;
         LogMessage(message, "ERROR");
         Console.ForegroundColor = ConsoleColor.White;
     }
     public void LogSuccess(string message)
     {
-        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Green;
         LogMessage(message, "SUCCESS");
         Console.ForegroundColor = ConsoleColor.White;
     }

@@ -12,7 +12,7 @@ public class ProductProvider : IProductProvider
         Products = GetProducts();
     }
 
-    private static IEnumerable<Product> GetProducts()
+    private static IEnumerable<Product> GetProducts() //dlaczego STATIC ? (dlatego, że nie operuje na danych instancji a tylko dostarcza dane hardcoded?)
     {
         return new List<Product>
         {

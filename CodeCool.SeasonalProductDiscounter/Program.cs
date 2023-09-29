@@ -11,8 +11,8 @@ class Program
     {
 
         IProductProvider productProvider = new ProductProvider();
-        IDiscountProvider discountProvider = null;
-        IDiscounterService discountService = null;
+        IDiscountProvider discountProvider = new DiscountProvider();
+        IDiscounterService discountService = new DiscountService(discountProvider);
         ILogger logger = new ConsoleLogger();
 
         var userInterface = new SeasonalProductDiscounterUi(productProvider, discountProvider, discountService, logger);

@@ -12,7 +12,6 @@ public static class SeasonExtensions
         { Season.Winter, new[] { Month.December, Month.January, Month.February } }
     };
 
-    private static readonly Season[] Seasons = SeasonsToMonths.Keys.ToArray();
 
     public static Season Shift(this Season season, int shift)
     {
@@ -32,5 +31,19 @@ public static class SeasonExtensions
         var monthFromDate = (Month)date.Month; 
 
         return monthsOfSeason.Contains(monthFromDate);
+    }
+
+    public static Season GetSeason(DateTime date)
+    {
+        foreach (var season in SeasonsToMonths.Keys)
+        {
+            if (Contains(season, date))
+            {
+                return season;
+            }
+        }
+
+
+        throw new InvalidOperationException("Something went wrong while getting season in comparison to given date (check SeasonExtensions)");
     }
 }

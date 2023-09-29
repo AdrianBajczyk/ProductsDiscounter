@@ -12,3 +12,6 @@ G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-Adria
 G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-AdrianBajczyk\CodeCool.SeasonalProductDiscounter\obj\Debug\net6.0\CodeCool.SeasonalProductDiscounter.pdb
 G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-AdrianBajczyk\CodeCool.SeasonalProductDiscounter\obj\Debug\net6.0\CodeCool.SeasonalProductDiscounter.genruntimeconfig.cache
 G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-AdrianBajczyk\CodeCool.SeasonalProductDiscounter\obj\Debug\net6.0\ref\CodeCool.SeasonalProductDiscounter.dll
+G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-AdrianBajczyk\CodeCool.SeasonalProductDiscounter\bin\Debug\net6.0\ConsoleTables.dll
+G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-AdrianBajczyk\CodeCool.SeasonalProductDiscounter\obj\Debug\net6.0\CodeCool.SeasonalProductDiscounter.csproj.AssemblyReference.cache
+G:\repozytoria\CodeCool\dotNet\seasonal-product-discounter-1-1q2023-csharp-AdrianBajczyk\CodeCool.SeasonalProductDiscounter\obj\Debug\net6.0\CodeCool.SeasonalProductDiscounter.csproj.CopyComplete

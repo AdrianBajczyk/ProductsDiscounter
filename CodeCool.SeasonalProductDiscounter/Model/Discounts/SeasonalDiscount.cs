@@ -1,20 +1,40 @@
-﻿using CodeCool.SeasonalProductDiscounter.Model.Products;
+﻿using CodeCool.SeasonalProductDiscounter.Extensions;
+using CodeCool.SeasonalProductDiscounter.Model.Products;
+using CodeCool.SeasonalProductDiscounter.Model.Enums;
 
 namespace CodeCool.SeasonalProductDiscounter.Model.Discounts;
 
-public record SeasonalDiscount(string name, int rate) : IDiscount
+public record SeasonalDiscount(string Name, int Rate) : IDiscount
 {
-    public string Name => name;
-
-    public int Rate => rate;
 
     public bool Accepts(Product product, DateTime date)
+{
+        Season currentSeason = SeasonExtensions.GetSeason(date);
+
+
+        if (Rate == 10)
     {
-        return (Rate == 10 && product.Season == Extensions.SeasonExtensions.Shift(product.Season,  1)) ||
-               (Rate == 10 && product.Season == Extensions.SeasonExtensions.Shift(product.Season, -1)) ||
-               (Rate == 20 && product.Season == Extensions.SeasonExtensions.Shift(product.Season,  2)) ||
-               (Rate == 20 && product.Season == Extensions.SeasonExtensions.Shift(product.Season, -2));
+
+        return product.Season == SeasonExtensions.Shift(currentSeason, 1) ||
+               product.Season == SeasonExtensions.Shift(currentSeason, -1);
     }
 
-   
+    
+    if (Rate == 20)
+    {
+        
+        return product.Season == SeasonExtensions.Shift(currentSeason, 2) ||
+               product.Season == SeasonExtensions.Shift(currentSeason, -2);
+    }
+
+    
+    return false;
+}
+
+    public override string ToString()
+    {
+        return $"{nameof(Name)}: {Name}, " +
+               $"{nameof(Rate)}: {Rate}, ";
+
+    }
 }

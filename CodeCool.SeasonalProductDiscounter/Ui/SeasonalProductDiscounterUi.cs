@@ -3,6 +3,7 @@ using CodeCool.SeasonalProductDiscounter.Model.Offers;
 using CodeCool.SeasonalProductDiscounter.Service.Discounts;
 using CodeCool.SeasonalProductDiscounter.Service.Logger;
 using CodeCool.SeasonalProductDiscounter.Service.Products;
+using ConsoleTables;
 
 namespace CodeCool.SeasonalProductDiscounter.Ui;
 

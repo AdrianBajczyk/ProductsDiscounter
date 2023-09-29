@@ -1,19 +1,22 @@
 ﻿using CodeCool.SeasonalProductDiscounter.Model.Products;
+using CodeCool.SeasonalProductDiscounter.Extensions;
+using CodeCool.SeasonalProductDiscounter.Model.Enums;
 
-namespace CodeCool.SeasonalProductDiscounter.Model.Discounts;
-
-//
-public record ColorDiscount(string name, int rate) : IDiscount
+namespace CodeCool.SeasonalProductDiscounter.Model.Discounts
 {
-    public string Name => name;
-
-    public int Rate => rate;
-
-    public bool Accepts(Product product, DateTime date)
+    public record ColorDiscount(string Name, int Rate, Season ValiditySeason) : IDiscount
     {
-        return (product.Season == Enums.Season.Winter && product.Color == Enums.Color.Blue)   ||
-               (product.Season == Enums.Season.Spring && product.Color == Enums.Color.Green)  ||
-               (product.Season == Enums.Season.Summer && product.Color == Enums.Color.Yellow) ||
-               (product.Season == Enums.Season.Autumn && product.Color == Enums.Color.Brown);
+        public bool Accepts(Product product, DateTime date)
+        {
+            return (SeasonExtensions.Contains(product.Season, date) && SeasonExtensions.Contains(ValiditySeason, date) && product.Color == Color.Blue);
+                   
+        }
+
+        public override string ToString()
+        {
+            return $"{nameof(Name)}: {Name}, " +
+                   $"{nameof(Rate)}: {Rate}, ";
+
+        }
     }
 }
