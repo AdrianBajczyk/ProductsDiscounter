@@ -1,0 +1,41 @@
+﻿namespace CodeCool.SeasonalProductDiscounter.Model.Enums;
+
+public enum ClothType
+{
+    Tshirt,
+    Jeans,
+    Dress,
+    Skirt,
+    Blouse,
+    Sweater,
+    Hoodie,
+    Jacket,
+    Coat,
+    Suit,
+    Shorts,
+    Trousers,
+    Leggings,
+    Jumpsuit,
+    Romper,
+    Cardigan,
+    Blazer,
+    Polo,
+    Sweatshirt,
+    Pajamas,
+    Underwear,
+    Socks,
+    Stockings,
+    Bathrobe,
+    Swimsuit,
+    Lingerie,
+    Kimono,
+    Sarong,
+    Kaftan,
+    Poncho,
+    Overalls,
+    Vest,
+    Onesie,
+    Peacoat,
+}
+
+//don't change default values 

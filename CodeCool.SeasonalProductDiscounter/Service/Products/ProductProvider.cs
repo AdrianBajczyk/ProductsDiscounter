@@ -1,5 +1,6 @@
 ﻿using CodeCool.SeasonalProductDiscounter.Model.Enums;
 using CodeCool.SeasonalProductDiscounter.Model.Products;
+using System.Reflection;
 
 namespace CodeCool.SeasonalProductDiscounter.Service.Products;
 
@@ -12,7 +13,7 @@ public class ProductProvider : IProductProvider
         Products = GetProducts();
     }
 
-    private static IEnumerable<Product> GetProducts() //dlaczego STATIC ? (dlatego, że nie operuje na danych instancji a tylko dostarcza dane hardcoded?)
+    private static IEnumerable<Product> GetProducts() 
     {
         return new List<Product>
         {
@@ -30,3 +31,5 @@ public class ProductProvider : IProductProvider
         };
     }
 }
+
+
