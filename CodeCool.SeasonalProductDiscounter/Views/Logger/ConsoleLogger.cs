@@ -1,4 +1,6 @@
-﻿namespace CodeCool.SeasonalProductDiscounter.Ui.Logger;
+﻿using ConsoleTables;
+
+namespace CodeCool.SeasonalProductDiscounter.Ui.Logger;
 
 public class ConsoleLogger : ILogger
 {
@@ -20,6 +22,17 @@ public class ConsoleLogger : ILogger
         Console.WriteLine(message);
     }
 
+    public void LogTable(List<string[]> content, params string[] columnNames)
+    {
+        var table = new ConsoleTable(columnNames);
+        foreach (var item in content)
+        {
+            table.AddRow(item);
+        }
+        table.Write(Format.Minimal);
+        Console.WriteLine();
+    }
+
     private void LogMessage(string message, string type)
     {
         var entry = $"[{DateTime.Now}] {type}: {message}";
@@ -29,5 +42,10 @@ public class ConsoleLogger : ILogger
     public void NewLine()
     {
         Console.WriteLine("\n");
+    }
+
+    public void Clear()
+    {
+        Console.Clear();
     }
 }

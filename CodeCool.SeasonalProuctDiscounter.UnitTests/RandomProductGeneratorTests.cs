@@ -3,7 +3,7 @@ using CodeCool.SeasonalProductDiscounter.Service.Products;
 
 namespace CodeCool.SeasonalProuctDiscounter.UnitTests
 {
-    public class Tests
+    public class RandomProductGeneratorTests
     {
         private IEnumerable<Product> products;
 

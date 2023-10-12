@@ -6,4 +6,6 @@ namespace CodeCool.SeasonalProductDiscounter.Service.Discounts;
 public interface IDiscounterService
 {
     Offer GetOffer(Product product, DateTime date);
+
+    IEnumerable<Offer> GetOffers(IEnumerable<Product> products, DateTime date);
 }

@@ -29,4 +29,19 @@ public class DiscountService : IDiscounterService
         var offer = new Offer(product, date, discountsBuffer, priceBuffer);
         return offer;
     }
+
+    public IEnumerable<Offer> GetOffers(IEnumerable<Product> products, DateTime date)
+    {
+        List<Offer> discounted = new();
+        foreach (var product in products)
+        {
+            var offer = GetOffer(product, date);
+            if (offer.Discounts.Any())
+            {
+                discounted.Add(offer);
+            }
+        }
+
+        return discounted;
+    }
 }

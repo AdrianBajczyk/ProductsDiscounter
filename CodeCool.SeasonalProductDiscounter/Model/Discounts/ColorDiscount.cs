@@ -6,10 +6,11 @@ namespace CodeCool.SeasonalProductDiscounter.Model.Discounts
 {
     public record ColorDiscount(string Name, int Rate, Season ValiditySeason) : IDiscount
     {
+        
         public bool Accepts(Product product, DateTime date)
         {
-            return (SeasonExtensions.Contains(product.Season, date) && SeasonExtensions.Contains(ValiditySeason, date) && product.Color == Color.Blue);
-                   
+            return (SeasonExtensions.Contains(product.Season, date) && SeasonExtensions.Contains(ValiditySeason, date) && product.Color == SeasonsToColors[product.Season]);
+
         }
 
         public override string ToString()
@@ -18,5 +19,13 @@ namespace CodeCool.SeasonalProductDiscounter.Model.Discounts
                    $"{nameof(Rate)}: {Rate}, ";
 
         }
+
+        private readonly Dictionary<Season, Color> SeasonsToColors = new() // gdzie to przechowywać
+        {
+            { Season.Spring, Color.Green },
+            { Season.Summer, Color.Yellow },
+            { Season.Autumn, Color.Brown },
+            { Season.Winter, Color.Blue }
+        };
     }
 }
