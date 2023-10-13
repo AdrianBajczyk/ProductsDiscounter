@@ -6,14 +6,18 @@ namespace CodeCool.SeasonalProductDiscounter.Service.Products;
 public class RandomProductGenerator : IProductProvider
 {
     private Random _random = new Random();
-    public IEnumerable<Product> Products => GetRandomProducts();
+    public IEnumerable<Product> Products { get; }
 
+    public RandomProductGenerator()
+    {
+        Products = GetRandomProducts();
+    }
     private IEnumerable<Product> GetRandomProducts()
     {
         
 
         var products = new List<Product>();
-        var ammountOFProducts = _random.Next(10, 15);
+        var ammountOFProducts = _random.Next(50, 70);
 
         for (int i = 0; i < ammountOFProducts; i++)
         {
@@ -47,7 +51,7 @@ public class RandomProductGenerator : IProductProvider
     private Season GetRandomSeason()
     {
         const int seasonItemsAmmount = 4;
-        var randomIndex = _random.Next(0, seasonItemsAmmount-1);
+        var randomIndex = _random.Next(0, seasonItemsAmmount);
 
 
 
@@ -57,7 +61,7 @@ public class RandomProductGenerator : IProductProvider
     private ClothType GetRandomClothType()
     {
         var clothTypeItemsAmmount = Enum.GetValues(typeof(ClothType)).Length;
-        var randomIndex = _random.Next(0, clothTypeItemsAmmount-1);
+        var randomIndex = _random.Next(0, clothTypeItemsAmmount);
 
 
 
@@ -67,7 +71,7 @@ public class RandomProductGenerator : IProductProvider
     private Color GetRandomColor()
     {
         var colorItemsAmmount = Enum.GetValues(typeof(Color)).Length;
-        var randomIndex = _random.Next(0, colorItemsAmmount-1);
+        var randomIndex = _random.Next(0, colorItemsAmmount);
 
 
 

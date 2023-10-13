@@ -25,8 +25,10 @@ public class DiscountService : IDiscounterService
                 priceBuffer -= priceBuffer * ((double)discount.Rate/100);
             }
         }
-        
-        var offer = new Offer(product, date, discountsBuffer, priceBuffer);
+
+        var roundedDiscountPrice = Math.Round(priceBuffer, 2);
+
+        var offer = new Offer(product, date, discountsBuffer, roundedDiscountPrice);
         return offer;
     }
 
