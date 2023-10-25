@@ -7,71 +7,101 @@ namespace CodeCool.SeasonalProductDiscounter.Views.UI.Printer;
 
 public class UIPrinter : IUIPrinter
 {
-    private readonly ILogger _logger;
+    private readonly SortedList<string, ILogger> _loggers;
     private List<string[]> _tableContent = new();
-    public UIPrinter(ILogger logger)
+    public UIPrinter(SortedList<string, ILogger> loggers)
     {
-        _logger = logger;
+        _loggers = loggers;
     }
 
     public void PrintDiscounts(IEnumerable<IDiscount> discounts)
     {
-        foreach (var discount in discounts)
+        foreach (var logger in _loggers)
         {
-            _tableContent.Add(new string[] { discount.Name, discount.Rate.ToString() }); ;
+            foreach (var discount in discounts)
+            {
+                _tableContent.Add(new string[] { discount.Name, discount.Rate.ToString() }); ;
+            }
+
+            logger.Value.NewLine();
+            logger.Value.LogInfo("This year's promotions:");
+            logger.Value.LogTable(_tableContent, "Name", "Rate");
+            _tableContent.Clear();
         }
-        _logger.NewLine();
-        _logger.LogInfo("This year's promotions:");
-        _logger.LogTable(_tableContent, "Name", "Rate");
-        _tableContent.Clear();
+        
     }
 
     public void PrintGroupedProducts<Tkey>(IEnumerable<IGrouping<Tkey, Product>> groupedProducts)
     {
-        foreach (var group in groupedProducts)
-        {
-            _logger.LogInfo(group.Key.ToString());
 
-            PrintProducts(group);
+        foreach (var logger in _loggers)
+        {
+            foreach (var group in groupedProducts)
+            {
+                logger.Value.LogInfo(group.Key.ToString());
+
+                PrintProducts(group);
+            } 
         }
+    }
+
+    public void PrintList(List<string> menu)
+    {
+        foreach (var logger in _loggers)
+        {
+            foreach (var item in menu)
+            {
+                logger.Value.LogInfo(item);
+            }
+        }
+        
     }
 
     public void PrintOffers(IEnumerable<Offer> offers)
     {
-        _logger.LogInfo("Promotions for choosen date:");
-        _logger.NewLine();
-
-        foreach (var offer in offers)
+        foreach (var logger in _loggers)
         {
-            _tableContent.Add(new string[] { offer.Product.Name, offer.Product.Color.ToString(), offer.Product.Season.ToString(), offer.Product.Price.ToString(), offer.Product.Id.ToString() });
-            _logger.LogTable(_tableContent, "Product Name", "Color", "Season", "Price", "Id");
-            _tableContent.Clear();
+            logger.Value.LogInfo("Promotions for choosen date:");
+            logger.Value.NewLine();
 
-
-            foreach (var discount in offer.Discounts)
+            foreach (var offer in offers)
             {
-                _tableContent.Add(new string[] { discount.Name, discount.Rate.ToString() });
+                _tableContent.Add(new string[] { offer.Product.Name, offer.Product.Color.ToString(), offer.Product.Season.ToString(), offer.Product.Price.ToString(), offer.Product.Id.ToString() });
+                logger.Value.LogTable(_tableContent, "Product Name", "Color", "Season", "Price", "Id");
+                _tableContent.Clear();
+
+
+                foreach (var discount in offer.Discounts)
+                {
+                    _tableContent.Add(new string[] { discount.Name, discount.Rate.ToString() });
+                }
+
+                logger.Value.LogTable(_tableContent, "Discounts", "Rate");
+                _tableContent.Clear();
+
+                logger.Value.LogInfo("Price after all discounts: " + offer.Price.ToString());
+                logger.Value.NewLine();
+                logger.Value.NewLine();
             }
-
-            _logger.LogTable(_tableContent, "Discounts", "Rate");
-            _tableContent.Clear();
-
-            _logger.LogInfo("Price after all discounts: " + offer.Price.ToString());
-            _logger.NewLine();
-            _logger.NewLine();
+            logger.Value.NewLine();
         }
-        _logger.NewLine();
+        
 
     }
 
     public void PrintProducts(IEnumerable<Product> products)
     {
-        foreach (var product in products)
+        foreach (var logger in _loggers)
         {
-            _tableContent.Add(new string[] { product.Name, product.Color.ToString(), product.Season.ToString(), product.Price.ToString(), product.Id.ToString() });
+            foreach (var product in products)
+            {
+                _tableContent.Add(new string[] { product.Name, product.Color.ToString(), product.Season.ToString(), product.Price.ToString(), product.Id.ToString() });
+            }
+            logger.Value.NewLine();
+            logger.Value.LogTable(_tableContent, "Name", "Color", "Season", "Price", "Id");
+            _tableContent.Clear();
         }
-        _logger.NewLine();
-        _logger.LogTable(_tableContent, "Name", "Color", "Season", "Price", "Id");
-        _tableContent.Clear();
+        
     }
 }
+

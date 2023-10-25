@@ -13,4 +13,6 @@ public interface IUIPrinter
     void PrintDiscounts(IEnumerable<IDiscount> discounts);
 
     void PrintOffers(IEnumerable<Offer> offers);
+
+    void PrintList(List<string> menu);
 }

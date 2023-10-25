@@ -6,15 +6,15 @@ namespace CodeCool.SeasonalProductDiscounter.Views.UI.Getter;
 
 public class UIGetter : IUIGetter
 {
-    private ILogger _logger;
+    private ILogger _consoleLogger;
 
-    public UIGetter(ILogger logger)
+    public UIGetter(SortedList<string, ILogger> loggers)
     {
-        _logger = logger;
+        _consoleLogger = loggers["consoleLogger"];
     }
     public Color GetColorFromUser()
     {
-        _logger.LogInfo("Enter a color:");
+        _consoleLogger.LogInfo("Enter a color:");
 
         string? input = null;
         Color color;
@@ -23,13 +23,13 @@ public class UIGetter : IUIGetter
         {
             if (input != null)
             {
-                _logger.LogError("Color not found in the database. Try:");
+                _consoleLogger.LogError("Color not found in the database. Try:");
 
                 var colors = Enum.GetValues(typeof(Color));
 
                 foreach (var item in colors)
                 {
-                    _logger.LogInfo(item.ToString());
+                    _consoleLogger.LogInfo(item.ToString());
                 }
 
             }
@@ -42,7 +42,7 @@ public class UIGetter : IUIGetter
 
     public DateTime GetDateFromUser()
     {
-        _logger.LogInfo("Enter a date:");
+        _consoleLogger.LogInfo("Enter a date:");
 
         string? input = null;
         DateTime date;
@@ -51,7 +51,7 @@ public class UIGetter : IUIGetter
         {
             if (input != null)
             {
-                _logger.LogError("Invalid date!");
+                _consoleLogger.LogError("Invalid date!");
             }
 
             input = Console.ReadLine();
@@ -70,12 +70,12 @@ public class UIGetter : IUIGetter
 
             if (string.IsNullOrWhiteSpace(buffer))
             {
-                _logger.LogError("Enter valid character");
+                _consoleLogger.LogError("Enter valid character");
                 continue;
             }
             if (!int.TryParse(buffer, out var value))
             {
-                _logger.LogError("Enter characters indicates integer input");
+                _consoleLogger.LogError("Enter characters indicates integer input");
                 continue;
             }
             return value;
@@ -92,7 +92,7 @@ public class UIGetter : IUIGetter
 
             if (string.IsNullOrWhiteSpace(buffer))
             {
-                _logger.LogError("Enter valid character");
+                _consoleLogger.LogError("Enter valid character");
                 continue;
             }
 
@@ -112,12 +112,12 @@ public class UIGetter : IUIGetter
 
             if (string.IsNullOrWhiteSpace(buffer))
             {
-                _logger.LogError("Enter valid character");
+                _consoleLogger.LogError("Enter valid character");
                 continue;
             }
             if (!double.TryParse(buffer, out var value))
             {
-                _logger.LogError("Enter characters indicates double input (0.00)");
+                _consoleLogger.LogError("Enter characters indicates double input (0.00)");
                 continue;
             }
             return Math.Round(value, 2);
@@ -128,11 +128,11 @@ public class UIGetter : IUIGetter
     {
 
 
-        _logger.LogInfo("Enter minimum price range");
+        _consoleLogger.LogInfo("Enter minimum price range");
 
         var minimum = GetPriceFromUser();
 
-        _logger.LogInfo("Enter maximum price range");
+        _consoleLogger.LogInfo("Enter maximum price range");
 
         var maximum = GetPriceFromUser();
 
@@ -142,7 +142,7 @@ public class UIGetter : IUIGetter
 
     public void GetKeyToContinue()
     {
-        _logger.LogInfo("Press any key to continue");
+        _consoleLogger.LogInfo("Press any key to continue");
         Console.ReadKey(true);
     }
 }

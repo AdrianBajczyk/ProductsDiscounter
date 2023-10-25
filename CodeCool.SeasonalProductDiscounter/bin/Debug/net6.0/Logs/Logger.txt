@@ -1,0 +1,30 @@
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+
+This year's promotions:
+ -------------------------- 
+ | Name            | Rate |
+ -------------------------- 
+ | Summer Kick-off | 10   |
+ -------------------------- 
+ | Winter Sale     | 10   |
+ -------------------------- 
+ | Blue Winter     | 5    |
+ -------------------------- 
+ | Green Spring    | 5    |
+ -------------------------- 
+ | Yellow Summer   | 5    |
+ -------------------------- 
+ | Brown Autumn    | 5    |
+ -------------------------- 
+ | Sale Discount   | 10   |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 8

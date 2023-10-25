@@ -7,6 +7,7 @@ using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.CatalogSubmenu;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.DiscountSubmenu;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.OffersSubmenu;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.StatisticsSubmenu;
+using CodeCool.SeasonalProductDiscounter.Views.UI.Printer;
 using ConsoleTables;
 
 namespace CodeCool.SeasonalProductDiscounter.Views.UI;
@@ -17,8 +18,10 @@ public class SeasonalProductDiscounterUi
     private readonly IOffersSubmenu _offersSubmenu;
     private readonly IStatisticsSubmenu _statisticsSubmenu;
     private readonly IDiscountSubmenu _discountSubmenu;
-    private readonly ILogger _logger;
+    private readonly SortedList<string, ILogger> _loggers;
     private readonly IUIGetter _uIGetter;
+    private readonly IUIPrinter _uIPrinter;
+
 
 
 
@@ -27,22 +30,21 @@ public class SeasonalProductDiscounterUi
         IOffersSubmenu offersSubmenu,
         IStatisticsSubmenu statisticsSubmenu,
         IDiscountSubmenu discountSubmenu,
-        ILogger logger,
-        IUIGetter uIGetter
-        )
+        SortedList<string,ILogger> loggers,
+        IUIGetter uIGetter,
+        IUIPrinter uIPrinter)
     {
         _catalogSubmenu = catalogSubmenu;
         _offersSubmenu = offersSubmenu;
         _statisticsSubmenu = statisticsSubmenu;
         _discountSubmenu = discountSubmenu;
-        _logger = logger;
+        _loggers = loggers;
         _uIGetter = uIGetter;
+        _uIPrinter = uIPrinter;
     }
 
     public void Run()
     {
-        _logger.LogInfo("Welcome to Seasonal Product Discounter!");
-        _logger.NewLine();
 
         int select = 0;
 
@@ -55,24 +57,24 @@ public class SeasonalProductDiscounterUi
             switch (select)
             {
                 case 1:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _catalogSubmenu.Run();
                     break;
                 case 2:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _discountSubmenu.Run();
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     break;
                 case 3:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offersSubmenu.Run();
                     break;
                 case 4:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _statisticsSubmenu.Run();
                     break;
                 default:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     break;
 
             }
@@ -82,13 +84,17 @@ public class SeasonalProductDiscounterUi
     }
     private void DisplayMenu()
     {
-        _logger.LogInfo("-----------Main Menu-----------");
-        _logger.LogInfo("1. Catalog");
-        _logger.LogInfo("2. Discounts");
-        _logger.LogInfo("3. Offers for specified date");
-        _logger.LogInfo("4. Products statistics");
-        _logger.LogInfo("5. Exit");
-        _logger.LogInfo("-------------------------------");
+        var menuContent = new List<string>();
+
+        menuContent.Add("-----------Main Menu-----------");
+        menuContent.Add("1. Catalog");
+        menuContent.Add("2. Discounts");
+        menuContent.Add("3. Offers for specified date");
+        menuContent.Add("4. Products statistics");
+        menuContent.Add("5. Exit");
+        menuContent.Add("-------------------------------");
+
+        _uIPrinter.PrintList(menuContent);
     }
 
 }

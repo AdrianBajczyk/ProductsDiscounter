@@ -20,16 +20,23 @@ class Program
         IProductProvider productProvider = new RandomProductGenerator();
         IDiscountProvider discountProvider = new DiscountProvider();
         IDiscounterService discountService = new DiscountService(discountProvider);
-        ILogger logger = new ConsoleLogger();
+
+        var loggers = new SortedList<string, ILogger>
+        {
+            { "consoleLogger", new ConsoleLogger()},
+            { "fileLogger", new FileLogger()} 
+        };
+
+
         IProductBrowser productBrowser = new ProductBrowser();
         IOffersBrowser offersBrowser = new OffersBrowser();
         IProductStatistics productStatistics = new ProductStatistics();
-        IUIPrinter uIPrinter = new UIPrinter(logger);
-        IUIGetter uIGetter = new UIGetter(logger);
+        IUIPrinter uIPrinter = new UIPrinter(loggers);
+        IUIGetter uIGetter = new UIGetter(loggers);
         IDiscountSubmenu discountSubmenu = new DiscountSubmenu(uIGetter,uIPrinter, discountProvider);
-        IStatisticsSubmenu statisticsSubmenu = new StatisticsSubmenu(logger, uIGetter, productStatistics, productProvider);
-        IOffersSubmenu offersSubmenu = new OffersSubmenu(logger, uIGetter, uIPrinter, discountService, productProvider, offersBrowser);
-        ICatalogSubmenu catalogSubmenu = new CatalogSumbenu(logger, uIGetter, uIPrinter, productProvider, productBrowser);
+        IStatisticsSubmenu statisticsSubmenu = new StatisticsSubmenu(loggers, uIGetter,uIPrinter, productStatistics, productProvider);
+        IOffersSubmenu offersSubmenu = new OffersSubmenu(loggers, uIGetter, uIPrinter, discountService, productProvider, offersBrowser);
+        ICatalogSubmenu catalogSubmenu = new CatalogSumbenu(loggers, uIGetter, uIPrinter, productProvider, productBrowser);
 
 
         var userInterface = new SeasonalProductDiscounterUi
@@ -37,8 +44,9 @@ class Program
             offersSubmenu,
             statisticsSubmenu,
             discountSubmenu,
-            logger,
-            uIGetter);
+            loggers,
+            uIGetter,
+            uIPrinter);
 
         userInterface.Run();
     }

@@ -11,7 +11,7 @@ namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus.OffersSubmenu;
 
 public class OffersSubmenu : IOffersSubmenu
 {
-    private readonly ILogger _logger;
+    private readonly SortedList<string, ILogger> _loggers;
     private readonly IUIGetter _uIGetter;
     private readonly IUIPrinter _uIPrinter;
     private readonly IDiscounterService _discounterService;
@@ -20,9 +20,9 @@ public class OffersSubmenu : IOffersSubmenu
 
     private IEnumerable<Offer>? _offers;
     private List<string> _filterNames = new();
-    public OffersSubmenu(ILogger logger, IUIGetter uIGetter, IUIPrinter uIPrinter, IDiscounterService discounterService, IProductProvider productProvider, IOffersBrowser offersBrowser)
+    public OffersSubmenu(SortedList<string,ILogger> loggers, IUIGetter uIGetter, IUIPrinter uIPrinter, IDiscounterService discounterService, IProductProvider productProvider, IOffersBrowser offersBrowser)
     {
-        _logger = logger;
+        _loggers = loggers;
         _uIGetter = uIGetter;
         _uIPrinter = uIPrinter;
         _discounterService = discounterService;
@@ -34,7 +34,7 @@ public class OffersSubmenu : IOffersSubmenu
     {
         int select = 0;
 
-        _logger.LogInfo("To check promotions for the selected day...");
+        _loggers["consoleLogger"].LogInfo("To check promotions for the selected day...");
         var dateOfOfferAvailability = _uIGetter.GetDateFromUser();
         _offers = _discounterService.GetOffers(_productProvider.Products, dateOfOfferAvailability);
 
@@ -50,7 +50,7 @@ public class OffersSubmenu : IOffersSubmenu
             {
                 case 1:
                     var dateFromUser = _uIGetter.GetDateFromUser();
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     var chosenSeason = SeasonExtensions.GetSeason(dateFromUser);
                     _offers = _offersBrowser.GetOffersFromSpecificSeason(_offers, chosenSeason);
                     _filterNames.Add($"Filtered by season - {chosenSeason}");
@@ -58,39 +58,39 @@ public class OffersSubmenu : IOffersSubmenu
                     break;
                 case 2:
                     var phraseFromUser = _uIGetter.GetPhraseFromUser();
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _offersBrowser.GetOffersWithNameContainingGivenString(_offers, phraseFromUser);
                     _filterNames.Add($"Names filtered with phrase - {phraseFromUser}");
                     break;
                 case 3:
                     var colorFromUser = _uIGetter.GetColorFromUser();
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _offersBrowser.GetOffersWithSpecificColor(_offers, colorFromUser);
                     _filterNames.Add($"Filtered by color - {colorFromUser}");
                     break;
                 case 4:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _offersBrowser.SortAscendingByName(_offers);
                     break;
                 case 5:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _offersBrowser.SortDescendingByName(_offers);
                     break;
                 case 6:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _offersBrowser.SortAscendingByPrice(_offers);
                     break;
                 case 7:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _offersBrowser.SortDescendingByPrice(_offers);
                     break;
                 case 8:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _offers = _discounterService.GetOffers(_productProvider.Products, dateOfOfferAvailability);
                     _filterNames.Clear();
                     break;
                 case 9:
-                    _logger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _filterNames.Clear();
                     break;
                 default:
@@ -101,27 +101,35 @@ public class OffersSubmenu : IOffersSubmenu
     }
     private void DisplayOffersSumbmenu()
     {
-        _logger.LogInfo("----------Offers Menu----------");
-        _logger.LogInfo("1. Add filter by season");
-        _logger.LogInfo("2. Add filter by phrase");
-        _logger.LogInfo("3. Add filter by color");
-        _logger.LogInfo("4. Sort ascending by name");
-        _logger.LogInfo("5. Sort descending by name");
-        _logger.LogInfo("6. Sort ascending by price");
-        _logger.LogInfo("7. Sort descending by price");
-        _logger.LogInfo("8. Reset filters");
-        _logger.LogInfo("9. Back");
-        _logger.LogInfo("--------------------------------");
+        var menuContent = new List<string>();
+
+        menuContent.Add("----------Offers Menu----------");
+        menuContent.Add("1. Add filter by season");
+        menuContent.Add("2. Add filter by phrase");
+        menuContent.Add("3. Add filter by color");
+        menuContent.Add("4. Sort ascending by name");
+        menuContent.Add("5. Sort descending by name");
+        menuContent.Add("6. Sort ascending by price");
+        menuContent.Add("7. Sort descending by price");
+        menuContent.Add("8. Reset filters");
+        menuContent.Add("9. Back");
+        menuContent.Add("--------------------------------");
+
+        _uIPrinter.PrintList(menuContent);
     }
 
     private void DisplayAddedFilters()
     {
-        _logger.LogInfo("-------------FILTERS------------");
+        var filterContent = new List<string>();
+
+        filterContent.Add("-------------FILTERS------------");
         foreach (var filterName in _filterNames)
         {
-            _logger.LogInfo(filterName);
+            filterContent.Add(filterName);
         }
-        _logger.LogInfo("--------------------------------");
-        _logger.NewLine();
+        filterContent.Add("--------------------------------");
+        filterContent.Add("\n");
+
+        _uIPrinter.PrintList(filterContent);
     }
 }
