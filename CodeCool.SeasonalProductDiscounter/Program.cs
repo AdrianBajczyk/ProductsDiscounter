@@ -3,13 +3,12 @@ using CodeCool.SeasonalProductDiscounter.Service.Discounts;
 using CodeCool.SeasonalProductDiscounter.Service.Products;
 using CodeCool.SeasonalProductDiscounter.Service.Statistics;
 using CodeCool.SeasonalProductDiscounter.Ui.Logger;
-using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.StatisticsSubmenu;
 using CodeCool.SeasonalProductDiscounter.Views.UI;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Getter;
-using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.DiscountSubmenu;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Printer;
-using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.OffersSubmenu;
-using CodeCool.SeasonalProductDiscounter.Views.UI.Menus.CatalogSubmenu;
+using CodeCool.SeasonalProductDiscounter.Service.Authentication;
+using CodeCool.SeasonalProductDiscounter.Views.UI.MenuFactory;
+using CodeCool.SeasonalProductDiscounter.Views.UI.Authentication;
 
 namespace CodeCool.SeasonalProductDiscounter;
 
@@ -17,38 +16,33 @@ class Program
 {
     static void Main(string[] args)
     {
-        IProductProvider productProvider = new RandomProductGenerator();
-        IDiscountProvider discountProvider = new DiscountProvider();
-        IDiscounterService discountService = new DiscountService(discountProvider);
 
-        var loggers = new SortedList<string, ILogger>
+        var loggers = new SortedList<string, ILogger> //zapytaj Dominika czy to nie jest złamanie Liskova jeśli UiSelector dziedziczyłby z AbstractMenu
         {
             { "consoleLogger", new ConsoleLogger()},
             { "fileLogger", new FileLogger()} 
         };
 
-
-        IProductBrowser productBrowser = new ProductBrowser();
-        IOffersBrowser offersBrowser = new OffersBrowser();
-        IProductStatistics productStatistics = new ProductStatistics();
         IUIPrinter uIPrinter = new UIPrinter(loggers);
         IUIGetter uIGetter = new UIGetter(loggers);
-        IDiscountSubmenu discountSubmenu = new DiscountSubmenu(uIGetter,uIPrinter, discountProvider);
-        IStatisticsSubmenu statisticsSubmenu = new StatisticsSubmenu(loggers, uIGetter,uIPrinter, productStatistics, productProvider);
-        IOffersSubmenu offersSubmenu = new OffersSubmenu(loggers, uIGetter, uIPrinter, discountService, productProvider, offersBrowser);
-        ICatalogSubmenu catalogSubmenu = new CatalogSumbenu(loggers, uIGetter, uIPrinter, productProvider, productBrowser);
 
+        IAuthenticationService authenticationService = new AuthentificationService();
+        IUserAutentificator userAutentificator = new UserAutentificator(authenticationService,uIGetter,loggers);
 
-        var userInterface = new SeasonalProductDiscounterUi
-            (catalogSubmenu,
-            offersSubmenu,
-            statisticsSubmenu,
-            discountSubmenu,
-            loggers,
-            uIGetter,
-            uIPrinter);
+        var menusCreators = new SortedList<int, AbstractMenuFactory>
+        {
+            {1, new CatalogUIFactory() },
+            {2, new DiscountUIFactory() },
+            {3, new OffersUIFactory() },
+            {4, new StatisticsUIFactory() },
+        };
 
-        userInterface.Run();
+        UiSelector selector = new UiSelector(loggers, uIGetter, uIPrinter, menusCreators, userAutentificator);
+        loggers["fileLogger"].LogInfo(DateTime.Now.ToString());
+        selector.Select();
+
+        ;
+        
     }
     
 }

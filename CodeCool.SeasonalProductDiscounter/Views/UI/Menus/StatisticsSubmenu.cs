@@ -4,30 +4,29 @@ using CodeCool.SeasonalProductDiscounter.Ui.Logger;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Getter;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Printer;
 
-namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus.StatisticsSubmenu;
+namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus;
 
-public class StatisticsSubmenu : IStatisticsSubmenu
+public class StatisticsSubmenu : AbstractMenu
 {
-
-    private readonly SortedList<string, ILogger> _loggers;
-    private readonly IUIGetter _uIGetter;
     private readonly IProductStatistics _productStatistics;
-    private readonly IProductProvider _productsProvider;
-    private readonly IUIPrinter _uIPrinter;
 
 
-    public StatisticsSubmenu(SortedList<string, ILogger> loggers, IUIGetter uiGetter, IUIPrinter uIPrinter, IProductStatistics productStatistics, IProductProvider productsProvider)
+    public StatisticsSubmenu(string title,bool needsAutification,IProductStatistics productStatistics)
+        :base(title, needsAutification)
     {
-        _loggers = loggers;
-        _uIGetter = uiGetter;
-        _uIPrinter = uIPrinter;
         _productStatistics = productStatistics;
-        _productsProvider = productsProvider;
     }
 
-    public IUIPrinter UIPrinter { get; }
+    public override void Display()
+    {
+        foreach(var log in _loggers) 
+        {
+            log.Value.LogInfo(Title);
+        }
+        Run();
+    }
 
-    public void Run()
+    public  void Run()
     {
         int select = 0;
 
@@ -41,32 +40,32 @@ public class StatisticsSubmenu : IStatisticsSubmenu
             {
                 case 1:
                     _loggers["consoleLogger"].Clear();
-                    var totalItems = _productStatistics.TotalAvailableItems(_productsProvider.Products);
+                    var totalItems = _productStatistics.TotalAvailableItems(_productProvider.Products);
                     LogHeader("Total available items", totalItems);
                     break;
                 case 2:
                     _loggers["consoleLogger"].Clear();
-                    var averagePrice = _productStatistics.AveragePriceOfProducts(_productsProvider.Products);
+                    var averagePrice = _productStatistics.AveragePriceOfProducts(_productProvider.Products);
                     LogHeader("Average price:", averagePrice);
                     break;
                 case 3:
                     _loggers["consoleLogger"].Clear();
-                    var theMostExpensiveProduct = _productStatistics.TheMostExpensiveProduct(_productsProvider.Products);
+                    var theMostExpensiveProduct = _productStatistics.TheMostExpensiveProduct(_productProvider.Products);
                     LogHeader("The most expensive product:", $"{theMostExpensiveProduct.Name} which cost {theMostExpensiveProduct.Price}");
                     break;
                 case 4:
                     _loggers["consoleLogger"].Clear();
-                    var cheapestProduct = _productStatistics.TheCheapestProduct(_productsProvider.Products);
+                    var cheapestProduct = _productStatistics.TheCheapestProduct(_productProvider.Products);
                     LogHeader("Chepset product:", $"{cheapestProduct.Name} which cost {cheapestProduct.Price}");
                     break;
                 case 5:
                     _loggers["consoleLogger"].Clear();
-                    var theMostCommonColor = _productStatistics.TheMostCommonColor(_productsProvider.Products);
+                    var theMostCommonColor = _productStatistics.TheMostCommonColor(_productProvider.Products);
                     LogHeader("The most common color is:", theMostCommonColor);
                     break;
                 case 6:
                     _loggers["consoleLogger"].Clear();
-                    var theMostCommonSeason = _productStatistics.TheMostCommonSeasonOfProductUse(_productsProvider.Products);
+                    var theMostCommonSeason = _productStatistics.TheMostCommonSeasonOfProductUse(_productProvider.Products);
                     LogHeader("The most common season use is:", theMostCommonSeason);
                     break;
                 default:
@@ -86,7 +85,7 @@ public class StatisticsSubmenu : IStatisticsSubmenu
             logger.Value.LogInfo($"{textInfo} {value}");
             logger.Value.NewLine();
         }
-        
+
     }
 
     private void DisplayStatisticsSubenu()
@@ -102,8 +101,9 @@ public class StatisticsSubmenu : IStatisticsSubmenu
         menuContent.Add("6. The most common season of product use");
         menuContent.Add("7. Back");
         menuContent.Add("--------------------------------");
-        
+
         _uIPrinter.PrintList(menuContent);
     }
 
+    
 }

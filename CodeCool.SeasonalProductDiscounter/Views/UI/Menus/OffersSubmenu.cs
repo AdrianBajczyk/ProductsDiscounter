@@ -7,29 +7,36 @@ using CodeCool.SeasonalProductDiscounter.Ui.Logger;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Getter;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Printer;
 
-namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus.OffersSubmenu;
+namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus;
 
-public class OffersSubmenu : IOffersSubmenu
+public class OffersSubmenu : AbstractMenu
 {
-    private readonly SortedList<string, ILogger> _loggers;
-    private readonly IUIGetter _uIGetter;
-    private readonly IUIPrinter _uIPrinter;
     private readonly IDiscounterService _discounterService;
-    private readonly IProductProvider _productProvider;
     private readonly IOffersBrowser _offersBrowser;
 
     private IEnumerable<Offer>? _offers;
     private List<string> _filterNames = new();
-    public OffersSubmenu(SortedList<string,ILogger> loggers, IUIGetter uIGetter, IUIPrinter uIPrinter, IDiscounterService discounterService, IProductProvider productProvider, IOffersBrowser offersBrowser)
+
+
+    public OffersSubmenu(
+        string title, 
+        bool needsAutification,
+        IDiscounterService discounterService,
+        IOffersBrowser offersBrowser) : base(title, needsAutification)
     {
-        _loggers = loggers;
-        _uIGetter = uIGetter;
-        _uIPrinter = uIPrinter;
+
         _discounterService = discounterService;
-        _productProvider = productProvider;
         _offersBrowser = offersBrowser;
     }
 
+    public override void Display()
+    {
+        foreach(var log in _loggers)
+        {
+            log.Value.LogInfo(Title);
+        }
+        Run();
+    }
     public void Run()
     {
         int select = 0;
@@ -132,4 +139,6 @@ public class OffersSubmenu : IOffersSubmenu
 
         _uIPrinter.PrintList(filterContent);
     }
+
+    
 }

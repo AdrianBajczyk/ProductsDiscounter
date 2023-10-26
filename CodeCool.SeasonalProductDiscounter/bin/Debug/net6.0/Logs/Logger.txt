@@ -1,3 +1,4 @@
+26.10.2023 13:06:53
 -----------Main Menu-----------
 1. Catalog
 2. Discounts
@@ -5,6 +6,183 @@
 4. Products statistics
 5. Exit
 -------------------------------
+26.10.2023 20:34:07
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Catalog Submenu
+
+ ---------------------------------------------------- 
+ | Name              | Color  | Season | Price | Id |
+ ---------------------------------------------------- 
+ | Brown Sweatshirt  | Brown  | Winter | 69,92 | 1  |
+ ---------------------------------------------------- 
+ | Blue Trousers     | Blue   | Spring | 72,26 | 2  |
+ ---------------------------------------------------- 
+ | Brown Tshirt      | Brown  | Spring | 46,64 | 3  |
+ ---------------------------------------------------- 
+ | Yellow Socks      | Yellow | Winter | 46,18 | 4  |
+ ---------------------------------------------------- 
+ | Blue Sweater      | Blue   | Spring | 55,25 | 5  |
+ ---------------------------------------------------- 
+ | Pink Kaftan       | Pink   | Winter | 94,76 | 6  |
+ ---------------------------------------------------- 
+ | Pink Leggings     | Pink   | Autumn | 34,34 | 7  |
+ ---------------------------------------------------- 
+ | Violet Leggings   | Violet | Spring | 44,92 | 8  |
+ ---------------------------------------------------- 
+ | Brown Sweater     | Brown  | Spring | 55,23 | 9  |
+ ---------------------------------------------------- 
+ | Pink Trousers     | Pink   | Winter | 38,77 | 10 |
+ ---------------------------------------------------- 
+ | Violet Tshirt     | Violet | Winter | 22,97 | 11 |
+ ---------------------------------------------------- 
+ | Violet Hoodie     | Violet | Autumn | 73,5  | 12 |
+ ---------------------------------------------------- 
+ | Pink Blazer       | Pink   | Autumn | 38,45 | 13 |
+ ---------------------------------------------------- 
+ | Brown Cardigan    | Brown  | Autumn | 84,18 | 14 |
+ ---------------------------------------------------- 
+ | Brown Onesie      | Brown  | Spring | 95,71 | 15 |
+ ---------------------------------------------------- 
+ | Violet Sweatshirt | Violet | Spring | 17,15 | 16 |
+ ---------------------------------------------------- 
+ | Blue Kaftan       | Blue   | Autumn | 43,4  | 17 |
+ ---------------------------------------------------- 
+ | Blue Onesie       | Blue   | Winter | 29,66 | 18 |
+ ---------------------------------------------------- 
+ | Blue Shorts       | Blue   | Autumn | 59,94 | 19 |
+ ---------------------------------------------------- 
+ | Brown Cardigan    | Brown  | Winter | 36,01 | 20 |
+ ---------------------------------------------------- 
+ | Red Jeans         | Red    | Winter | 48,51 | 21 |
+ ---------------------------------------------------- 
+ | Green Jumpsuit    | Green  | Winter | 75,87 | 22 |
+ ---------------------------------------------------- 
+ | Green Peacoat     | Green  | Winter | 69,68 | 23 |
+ ---------------------------------------------------- 
+ | Yellow Onesie     | Yellow | Spring | 82,84 | 24 |
+ ---------------------------------------------------- 
+ | Yellow Jeans      | Yellow | Winter | 94,43 | 25 |
+ ---------------------------------------------------- 
+ | Yellow Jeans      | Yellow | Autumn | 44,71 | 26 |
+ ---------------------------------------------------- 
+ | Brown Polo        | Brown  | Summer | 53,53 | 27 |
+ ---------------------------------------------------- 
+ | Violet Kimono     | Violet | Autumn | 94,71 | 28 |
+ ---------------------------------------------------- 
+ | Red Kaftan        | Red    | Spring | 67,87 | 29 |
+ ---------------------------------------------------- 
+ | Blue Jumpsuit     | Blue   | Summer | 86,66 | 30 |
+ ---------------------------------------------------- 
+ | Green Socks       | Green  | Winter | 47,4  | 31 |
+ ---------------------------------------------------- 
+ | Pink Shorts       | Pink   | Summer | 99,61 | 32 |
+ ---------------------------------------------------- 
+ | Violet Vest       | Violet | Autumn | 10,6  | 33 |
+ ---------------------------------------------------- 
+ | Brown Overalls    | Brown  | Winter | 93,48 | 34 |
+ ---------------------------------------------------- 
+ | Violet Trousers   | Violet | Winter | 28,34 | 35 |
+ ---------------------------------------------------- 
+ | Pink Bathrobe     | Pink   | Summer | 57,06 | 36 |
+ ---------------------------------------------------- 
+ | Brown Jumpsuit    | Brown  | Summer | 84,86 | 37 |
+ ---------------------------------------------------- 
+ | Yellow Shorts     | Yellow | Autumn | 61,83 | 38 |
+ ---------------------------------------------------- 
+ | Blue Shorts       | Blue   | Summer | 67,79 | 39 |
+ ---------------------------------------------------- 
+ | Red Jacket        | Red    | Summer | 42,47 | 40 |
+ ---------------------------------------------------- 
+ | Pink Underwear    | Pink   | Autumn | 25,85 | 41 |
+ ---------------------------------------------------- 
+ | Green Jumpsuit    | Green  | Spring | 12,29 | 42 |
+ ---------------------------------------------------- 
+ | Pink Lingerie     | Pink   | Winter | 21,51 | 43 |
+ ---------------------------------------------------- 
+ | Red Polo          | Red    | Winter | 63,96 | 44 |
+ ---------------------------------------------------- 
+ | Pink Overalls     | Pink   | Summer | 49,02 | 45 |
+ ---------------------------------------------------- 
+ | Green Coat        | Green  | Autumn | 37,47 | 46 |
+ ---------------------------------------------------- 
+ | Red Lingerie      | Red    | Autumn | 80,21 | 47 |
+ ---------------------------------------------------- 
+ | Blue Kimono       | Blue   | Summer | 46,86 | 48 |
+ ---------------------------------------------------- 
+ | Green Sweatshirt  | Green  | Autumn | 55,42 | 49 |
+ ---------------------------------------------------- 
+ | Blue Kaftan       | Blue   | Autumn | 85,12 | 50 |
+ ---------------------------------------------------- 
+ | Yellow Bathrobe   | Yellow | Autumn | 76,07 | 51 |
+ ---------------------------------------------------- 
+ | Violet Romper     | Violet | Summer | 50,07 | 52 |
+ ---------------------------------------------------- 
+ | Red Leggings      | Red    | Autumn | 79,82 | 53 |
+ ---------------------------------------------------- 
+ | Brown Suit        | Brown  | Spring | 22,97 | 54 |
+ ---------------------------------------------------- 
+ | Red Onesie        | Red    | Winter | 72,54 | 55 |
+ ---------------------------------------------------- 
+ | Red Tshirt        | Red    | Spring | 89,7  | 56 |
+ ---------------------------------------------------- 
+ | Violet Tshirt     | Violet | Summer | 53,4  | 57 |
+ ---------------------------------------------------- 
+ | Green Skirt       | Green  | Spring | 69,44 | 58 |
+ ---------------------------------------------------- 
+ | Violet Dress      | Violet | Spring | 72,92 | 59 |
+ ---------------------------------------------------- 
+ | Yellow Shorts     | Yellow | Spring | 90,02 | 60 |
+ ---------------------------------------------------- 
+ | Yellow Vest       | Yellow | Autumn | 70,61 | 61 |
+ ---------------------------------------------------- 
+ | Green Tshirt      | Green  | Winter | 94,03 | 62 |
+ ---------------------------------------------------- 
+ | Yellow Shorts     | Yellow | Spring | 33,24 | 63 |
+ ---------------------------------------------------- 
+ | Red Sweatshirt    | Red    | Spring | 90,91 | 64 |
+ ---------------------------------------------------- 
+ | Blue Sweatshirt   | Blue   | Winter | 32,12 | 65 |
+ ---------------------------------------------------- 
+ | Blue Jacket       | Blue   | Summer | 61,59 | 66 |
+ ---------------------------------------------------- 
+
+ Count: 66
+-------------FILTERS------------
+--------------------------------
+
+
+------------Catalog Menu------------
+1.  Add filter by season
+2.  Add filter by phrase
+3.  Add filter by color
+4.  Add filter by price smaller than
+5.  Add filter by price greater than
+6.  Add filter by price range
+7.  Display grouped by name
+8.  Display grouped by season
+9.  Display grouped by color
+10. Display grouped by price range
+11. Sort ascending by name
+12. Sort descending by name
+13. Sort ascending by price
+14. Sort descending by price
+15. Reset filters
+16. Back
+------------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Discounts
 
 This year's promotions:
  -------------------------- 
@@ -28,3 +206,2390 @@ This year's promotions:
  -------------------------- 
 
  Count: 8
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Offers Submenu
+Promotions for choosen date:
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Onesie | Green | Autumn | 94,31 | 1  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 84,88
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Hoodie | Green | Spring | 17,64 | 2  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 15,88
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Socks | Yellow | Autumn | 53,75 | 3  |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 48,38
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Pink Lingerie | Pink  | Autumn | 46,86 | 4  |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 42,17
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Yellow Leggings | Yellow | Summer | 50,08 | 5  |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 40,06
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Jumpsuit | Violet | Summer | 73,35 | 6  |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 58,68
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Yellow Swimsuit | Yellow | Spring | 66,33 | 7  |
+ -------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 59,7
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Kaftan | Green | Summer | 33,76 | 8  |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 27,01
+
+
+ ------------------------------------------------- 
+ | Product Name    | Color | Season | Price | Id |
+ ------------------------------------------------- 
+ | Blue Sweatshirt | Blue  | Summer | 44,16 | 9  |
+ ------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 35,33
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Romper | Brown | Spring | 19,6  | 10 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 17,64
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Violet Polo  | Violet | Autumn | 7,3   | 11 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 6,57
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Blazer | Brown | Winter | 6,78  | 12 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 6,1
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Dress    | Red   | Autumn | 54,01 | 13 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 48,61
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Green Pajamas | Green | Winter | 72,04 | 14 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 64,84
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Suit   | Brown | Autumn | 52,31 | 15 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 47,08
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Pink Shorts  | Pink  | Winter | 81,19 | 16 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 73,07
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Kaftan   | Red   | Winter | 19,92 | 17 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 17,93
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Trousers | Violet | Summer | 78,79 | 18 |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 63,03
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Blue Underwear | Blue  | Summer | 94,05 | 19 |
+ ------------------------------------------------ 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 75,24
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Red Stockings | Red   | Summer | 26,13 | 20 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 20,9
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Suit     | Red   | Summer | 65,57 | 21 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 52,46
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Pink Socks   | Pink  | Autumn | 66,79 | 22 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 60,11
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Trousers | Red   | Spring | 5,25  | 23 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 4,72
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Violet Suit  | Violet | Spring | 42,14 | 24 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 37,93
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Pink Suit    | Pink  | Spring | 48,3  | 25 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 43,47
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Green Jumpsuit | Green | Winter | 9,63  | 26 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 8,67
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Skirt | Yellow | Winter | 89,94 | 27 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 80,95
+
+
+ ------------------------------------------------- 
+ | Product Name   | Color  | Season | Price | Id |
+ ------------------------------------------------- 
+ | Violet Peacoat | Violet | Summer | 36,11 | 28 |
+ ------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 28,89
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Cardigan | Blue  | Spring | 93,99 | 29 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 84,59
+
+
+ --------------------------------------------------- 
+ | Product Name     | Color  | Season | Price | Id |
+ --------------------------------------------------- 
+ | Violet Stockings | Violet | Spring | 48,75 | 30 |
+ --------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 43,88
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Suit   | Green | Spring | 37,92 | 31 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 34,13
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Jumpsuit | Red   | Summer | 34,23 | 32 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 27,38
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Suit   | Brown | Winter | 47,02 | 33 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 42,32
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Socks | Yellow | Spring | 19,72 | 34 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 17,75
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Yellow Lingerie | Yellow | Summer | 49,46 | 35 |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 39,57
+
+
+ ------------------------------------------------ 
+ | Product Name  | Color  | Season | Price | Id |
+ ------------------------------------------------ 
+ | Yellow Onesie | Yellow | Spring | 16,97 | 36 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 15,27
+
+
+ ------------------------------------------------ 
+ | Product Name  | Color  | Season | Price | Id |
+ ------------------------------------------------ 
+ | Violet Kimono | Violet | Summer | 38,22 | 37 |
+ ------------------------------------------------ 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 30,58
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Vest    | Blue  | Spring | 42,26 | 38 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 38,03
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Bathrobe | Violet | Spring | 48,08 | 39 |
+ -------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 43,27
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Pink Jumpsuit | Pink  | Summer | 49,25 | 40 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 39,4
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Cardigan | Violet | Summer | 94,51 | 41 |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 75,61
+
+
+ --------------------------------------------------- 
+ | Product Name     | Color  | Season | Price | Id |
+ --------------------------------------------------- 
+ | Yellow Stockings | Yellow | Spring | 50,11 | 42 |
+ --------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 45,1
+
+
+ ------------------------------------------------- 
+ | Product Name    | Color | Season | Price | Id |
+ ------------------------------------------------- 
+ | Green Stockings | Green | Spring | 67,04 | 43 |
+ ------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 60,34
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Sarong | Brown | Autumn | 69,84 | 44 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 62,86
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Pink Leggings | Pink  | Spring | 47,82 | 45 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 43,04
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Kaftan  | Blue  | Summer | 97,32 | 46 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 77,86
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Bathrobe | Violet | Summer | 47,77 | 47 |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 38,22
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Cardigan | Blue  | Summer | 90,92 | 48 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 72,74
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Socks   | Blue  | Summer | 71,28 | 49 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 57,02
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Socks  | Green | Autumn | 46,18 | 50 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 41,56
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Green Lingerie | Green | Summer | 36,67 | 51 |
+ ------------------------------------------------ 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 29,34
+
+
+
+-------------FILTERS------------
+--------------------------------
+
+
+----------Offers Menu----------
+1. Add filter by season
+2. Add filter by phrase
+3. Add filter by color
+4. Sort ascending by name
+5. Sort descending by name
+6. Sort ascending by price
+7. Sort descending by price
+8. Reset filters
+9. Back
+--------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Statistics Submenu
+----Products Statistics Menu----
+1. Total available items
+2. Average price of products
+3. The most expensive product
+4. The cheapest product
+5. The most common color
+6. The most common season of product use
+7. Back
+--------------------------------
+
+Total available items 65
+
+----Products Statistics Menu----
+1. Total available items
+2. Average price of products
+3. The most expensive product
+4. The cheapest product
+5. The most common color
+6. The most common season of product use
+7. Back
+--------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Statistics Submenu
+----Products Statistics Menu----
+1. Total available items
+2. Average price of products
+3. The most expensive product
+4. The cheapest product
+5. The most common color
+6. The most common season of product use
+7. Back
+--------------------------------
+
+Total available items 54
+
+----Products Statistics Menu----
+1. Total available items
+2. Average price of products
+3. The most expensive product
+4. The cheapest product
+5. The most common color
+6. The most common season of product use
+7. Back
+--------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+26.10.2023 20:43:46
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Catalog Submenu
+
+ -------------------------------------------------- 
+ | Name            | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Red Socks       | Red    | Spring | 11,36 | 1  |
+ -------------------------------------------------- 
+ | Violet Hoodie   | Violet | Summer | 19,79 | 2  |
+ -------------------------------------------------- 
+ | Pink Underwear  | Pink   | Winter | 94,82 | 3  |
+ -------------------------------------------------- 
+ | Green Onesie    | Green  | Autumn | 84,17 | 4  |
+ -------------------------------------------------- 
+ | Yellow Socks    | Yellow | Autumn | 20,73 | 5  |
+ -------------------------------------------------- 
+ | Red Jacket      | Red    | Spring | 65,35 | 6  |
+ -------------------------------------------------- 
+ | Brown Blazer    | Brown  | Autumn | 49,34 | 7  |
+ -------------------------------------------------- 
+ | Brown Sweater   | Brown  | Winter | 62,02 | 8  |
+ -------------------------------------------------- 
+ | Brown Poncho    | Brown  | Autumn | 92,88 | 9  |
+ -------------------------------------------------- 
+ | Yellow Pajamas  | Yellow | Autumn | 91,63 | 10 |
+ -------------------------------------------------- 
+ | Green Suit      | Green  | Autumn | 14,32 | 11 |
+ -------------------------------------------------- 
+ | Blue Sweatshirt | Blue   | Autumn | 50,4  | 12 |
+ -------------------------------------------------- 
+ | Red Blazer      | Red    | Spring | 17,41 | 13 |
+ -------------------------------------------------- 
+ | Pink Pajamas    | Pink   | Spring | 64,56 | 14 |
+ -------------------------------------------------- 
+ | Violet Overalls | Violet | Spring | 99,68 | 15 |
+ -------------------------------------------------- 
+ | Green Jacket    | Green  | Summer | 78,31 | 16 |
+ -------------------------------------------------- 
+ | Blue Suit       | Blue   | Summer | 36,3  | 17 |
+ -------------------------------------------------- 
+ | Violet Pajamas  | Violet | Spring | 67,48 | 18 |
+ -------------------------------------------------- 
+ | Blue Skirt      | Blue   | Autumn | 71,66 | 19 |
+ -------------------------------------------------- 
+ | Blue Tshirt     | Blue   | Autumn | 13,56 | 20 |
+ -------------------------------------------------- 
+ | Pink Peacoat    | Pink   | Autumn | 84,61 | 21 |
+ -------------------------------------------------- 
+ | Green Onesie    | Green  | Autumn | 8,4   | 22 |
+ -------------------------------------------------- 
+ | Blue Swimsuit   | Blue   | Winter | 13,74 | 23 |
+ -------------------------------------------------- 
+ | Yellow Hoodie   | Yellow | Autumn | 82,14 | 24 |
+ -------------------------------------------------- 
+ | Green Lingerie  | Green  | Autumn | 19,58 | 25 |
+ -------------------------------------------------- 
+ | Blue Kaftan     | Blue   | Winter | 76,4  | 26 |
+ -------------------------------------------------- 
+ | Violet Poncho   | Violet | Summer | 69,51 | 27 |
+ -------------------------------------------------- 
+ | Brown Socks     | Brown  | Spring | 55,61 | 28 |
+ -------------------------------------------------- 
+ | Pink Sarong     | Pink   | Winter | 89,84 | 29 |
+ -------------------------------------------------- 
+ | Green Poncho    | Green  | Summer | 83,5  | 30 |
+ -------------------------------------------------- 
+ | Violet Tshirt   | Violet | Winter | 16,7  | 31 |
+ -------------------------------------------------- 
+ | Green Socks     | Green  | Summer | 65,99 | 32 |
+ -------------------------------------------------- 
+ | Violet Jumpsuit | Violet | Summer | 22,49 | 33 |
+ -------------------------------------------------- 
+ | Blue Romper     | Blue   | Spring | 79,57 | 34 |
+ -------------------------------------------------- 
+ | Green Swimsuit  | Green  | Autumn | 13,69 | 35 |
+ -------------------------------------------------- 
+ | Blue Jacket     | Blue   | Winter | 19,96 | 36 |
+ -------------------------------------------------- 
+ | Red Leggings    | Red    | Autumn | 31,44 | 37 |
+ -------------------------------------------------- 
+ | Violet Blazer   | Violet | Autumn | 94,51 | 38 |
+ -------------------------------------------------- 
+ | Blue Socks      | Blue   | Winter | 76,62 | 39 |
+ -------------------------------------------------- 
+ | Brown Polo      | Brown  | Autumn | 44,88 | 40 |
+ -------------------------------------------------- 
+ | Blue Swimsuit   | Blue   | Summer | 22,79 | 41 |
+ -------------------------------------------------- 
+ | Green Shorts    | Green  | Autumn | 30,42 | 42 |
+ -------------------------------------------------- 
+ | Pink Shorts     | Pink   | Spring | 14,11 | 43 |
+ -------------------------------------------------- 
+ | Blue Stockings  | Blue   | Summer | 15,84 | 44 |
+ -------------------------------------------------- 
+ | Violet Romper   | Violet | Winter | 8,48  | 45 |
+ -------------------------------------------------- 
+ | Blue Suit       | Blue   | Summer | 5,02  | 46 |
+ -------------------------------------------------- 
+ | Red Romper      | Red    | Summer | 53,5  | 47 |
+ -------------------------------------------------- 
+ | Yellow Romper   | Yellow | Autumn | 16,33 | 48 |
+ -------------------------------------------------- 
+ | Red Onesie      | Red    | Winter | 78,82 | 49 |
+ -------------------------------------------------- 
+ | Pink Sweater    | Pink   | Summer | 21,87 | 50 |
+ -------------------------------------------------- 
+ | Brown Jeans     | Brown  | Autumn | 84,58 | 51 |
+ -------------------------------------------------- 
+ | Violet Jumpsuit | Violet | Autumn | 82,4  | 52 |
+ -------------------------------------------------- 
+ | Blue Onesie     | Blue   | Winter | 80,09 | 53 |
+ -------------------------------------------------- 
+ | Pink Peacoat    | Pink   | Winter | 80,25 | 54 |
+ -------------------------------------------------- 
+ | Red Tshirt      | Red    | Autumn | 19,28 | 55 |
+ -------------------------------------------------- 
+ | Brown Skirt     | Brown  | Winter | 24,68 | 56 |
+ -------------------------------------------------- 
+ | Green Dress     | Green  | Spring | 5,56  | 57 |
+ -------------------------------------------------- 
+ | Pink Leggings   | Pink   | Autumn | 29,53 | 58 |
+ -------------------------------------------------- 
+ | Blue Blazer     | Blue   | Winter | 47,42 | 59 |
+ -------------------------------------------------- 
+ | Pink Cardigan   | Pink   | Spring | 70,96 | 60 |
+ -------------------------------------------------- 
+ | Blue Underwear  | Blue   | Autumn | 94,58 | 61 |
+ -------------------------------------------------- 
+ | Blue Sarong     | Blue   | Summer | 29,23 | 62 |
+ -------------------------------------------------- 
+ | Red Vest        | Red    | Summer | 46,26 | 63 |
+ -------------------------------------------------- 
+
+ Count: 63
+-------------FILTERS------------
+--------------------------------
+
+
+------------Catalog Menu------------
+1.  Add filter by season
+2.  Add filter by phrase
+3.  Add filter by color
+4.  Add filter by price smaller than
+5.  Add filter by price greater than
+6.  Add filter by price range
+7.  Display grouped by name
+8.  Display grouped by season
+9.  Display grouped by color
+10. Display grouped by price range
+11. Sort ascending by name
+12. Sort descending by name
+13. Sort ascending by price
+14. Sort descending by price
+15. Reset filters
+16. Back
+------------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+26.10.2023 21:01:27
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+26.10.2023 21:06:15
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+You have been logged as: name1
+Offers Submenu
+26.10.2023 21:06:52
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Login and password doesn't match: sd
+26.10.2023 21:08:51
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+26.10.2023 21:11:52
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Login and password doesn't match: aa
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+Login and password doesn't match: aa
+You have been logged as: name1
+Offers Submenu
+26.10.2023 21:12:35
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+You have been logged as: name1
+Offers Submenu
+26.10.2023 21:13:11
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+You have been logged as: name1
+Offers Submenu
+26.10.2023 21:13:48
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------
+You have been logged as: name1
+Offers Submenu
+Promotions for choosen date:
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Socks   | Blue  | Spring | 13,21 | 1  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 11,89
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Bathrobe | Blue  | Summer | 49,2  | 2  |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 39,36
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Polo     | Red   | Autumn | 15,13 | 3  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 13,62
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Skirt  | Brown | Spring | 86,78 | 4  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 78,1
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Pink Sarong  | Pink  | Summer | 21,19 | 5  |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 16,95
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Jumpsuit | Violet | Summer | 60,36 | 6  |
+ -------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 48,29
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Jacket   | Red   | Winter | 88,53 | 7  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 79,68
+
+
+ ------------------------------------------------ 
+ | Product Name  | Color  | Season | Price | Id |
+ ------------------------------------------------ 
+ | Violet Blouse | Violet | Summer | 47,01 | 8  |
+ ------------------------------------------------ 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 37,61
+
+
+ ------------------------------------------------ 
+ | Product Name  | Color  | Season | Price | Id |
+ ------------------------------------------------ 
+ | Violet Poncho | Violet | Autumn | 18,61 | 9  |
+ ------------------------------------------------ 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 16,75
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Skirt | Yellow | Summer | 90,66 | 10 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 72,53
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Yellow Swimsuit | Yellow | Spring | 80,61 | 11 |
+ -------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 72,55
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Vest   | Brown | Summer | 67,74 | 12 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 54,19
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Shorts | Brown | Autumn | 77,4  | 13 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 69,66
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Bathrobe | Red   | Winter | 72,84 | 14 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 65,56
+
+
+ -------------------------------------------------- 
+ | Product Name     | Color | Season | Price | Id |
+ -------------------------------------------------- 
+ | Brown Sweatshirt | Brown | Autumn | 39,61 | 15 |
+ -------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 35,65
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Cardigan | Red   | Winter | 90,77 | 16 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 81,69
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Coat   | Green | Spring | 86,65 | 17 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 77,98
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Jumpsuit | Red   | Winter | 94,39 | 18 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 84,95
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Hoodie   | Red   | Spring | 99,97 | 19 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 89,97
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Violet Polo  | Violet | Autumn | 85,56 | 20 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 77
+
+
+ ------------------------------------------------- 
+ | Product Name   | Color  | Season | Price | Id |
+ ------------------------------------------------- 
+ | Yellow Sweater | Yellow | Spring | 21,83 | 21 |
+ ------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 19,65
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Swimsuit | Blue  | Winter | 15,8  | 22 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+ | Blue Winter | 5    |
+ ---------------------- 
+
+ Count: 2
+Price after all discounts: 13,51
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Lingerie | Red   | Winter | 91,38 | 23 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 82,24
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Brown Peacoat | Brown | Summer | 57,88 | 24 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 46,3
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Romper | Green | Autumn | 52,62 | 25 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 47,36
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Tshirt  | Blue  | Autumn | 47,55 | 26 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 42,79
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Bathrobe | Blue  | Winter | 17,08 | 27 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+ | Blue Winter | 5    |
+ ---------------------- 
+
+ Count: 2
+Price after all discounts: 14,6
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Blouse | Brown | Summer | 73,91 | 28 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 59,13
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Poncho | Brown | Winter | 81,71 | 29 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 73,54
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Hoodie   | Red   | Summer | 8,37  | 30 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 6,7
+
+
+ -------------------------------------------------- 
+ | Product Name    | Color  | Season | Price | Id |
+ -------------------------------------------------- 
+ | Violet Swimsuit | Violet | Spring | 60,08 | 31 |
+ -------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 54,07
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Pink Swimsuit | Pink  | Summer | 56,73 | 32 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 45,38
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Brown Leggings | Brown | Winter | 66,44 | 33 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 59,8
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Kimono   | Red   | Spring | 71,17 | 34 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 64,05
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Socks | Yellow | Autumn | 31,29 | 35 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 28,16
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Brown Swimsuit | Brown | Winter | 45,25 | 36 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 40,72
+
+
+ ------------------------------------------------- 
+ | Product Name   | Color  | Season | Price | Id |
+ ------------------------------------------------- 
+ | Violet Peacoat | Violet | Summer | 31,06 | 37 |
+ ------------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 24,85
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Polo    | Blue  | Autumn | 15,01 | 38 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 13,51
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Pink Coat    | Pink  | Summer | 14,45 | 39 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 11,56
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Sarong | Brown | Summer | 86,82 | 40 |
+ ---------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 69,46
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Coat  | Yellow | Summer | 46,8  | 41 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 37,44
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Violet Coat  | Violet | Summer | 83,38 | 42 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 66,7
+
+
+ ------------------------------------------------- 
+ | Product Name   | Color  | Season | Price | Id |
+ ------------------------------------------------- 
+ | Yellow Sweater | Yellow | Spring | 58,9  | 43 |
+ ------------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 53,01
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Blue Stockings | Blue  | Autumn | 58,41 | 44 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 52,57
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Lingerie | Blue  | Spring | 57,03 | 45 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 51,33
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Brown Peacoat | Brown | Summer | 25,06 | 46 |
+ ----------------------------------------------- 
+
+ Count: 1
+ -------------------------- 
+ | Discounts       | Rate |
+ -------------------------- 
+ | Outlet Discount | 20   |
+ -------------------------- 
+
+ Count: 1
+Price after all discounts: 20,05
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Kimono | Brown | Spring | 53,29 | 47 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 47,96
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Brown Bathrobe | Brown | Autumn | 18,78 | 48 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 16,9
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Pink Trousers | Pink  | Autumn | 14,84 | 49 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 13,36
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Blue Blazer  | Blue  | Spring | 25,76 | 50 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 23,18
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Green Leggings | Green | Spring | 95,32 | 51 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 85,79
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Leggings | Red   | Autumn | 52,98 | 52 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 47,68
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Green Blouse | Green | Autumn | 62,64 | 53 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 56,38
+
+
+ ----------------------------------------------- 
+ | Product Name | Color  | Season | Price | Id |
+ ----------------------------------------------- 
+ | Yellow Dress | Yellow | Spring | 13,51 | 54 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ------------------------ 
+ | Discounts     | Rate |
+ ------------------------ 
+ | Sale Discount | 10   |
+ ------------------------ 
+
+ Count: 1
+Price after all discounts: 12,16
+
+
+
+-------------FILTERS------------
+--------------------------------
+
+
+----------Offers Menu----------
+1. Add filter by season
+2. Add filter by phrase
+3. Add filter by color
+4. Sort ascending by name
+5. Sort descending by name
+6. Sort ascending by price
+7. Sort descending by price
+8. Reset filters
+9. Back
+--------------------------------
+Promotions for choosen date:
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Jacket   | Red   | Winter | 88,53 | 7  |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 79,68
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Bathrobe | Red   | Winter | 72,84 | 14 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 65,56
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Cardigan | Red   | Winter | 90,77 | 16 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 81,69
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Jumpsuit | Red   | Winter | 94,39 | 18 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 84,95
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Swimsuit | Blue  | Winter | 15,8  | 22 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+ | Blue Winter | 5    |
+ ---------------------- 
+
+ Count: 2
+Price after all discounts: 13,51
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Red Lingerie | Red   | Winter | 91,38 | 23 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 82,24
+
+
+ ----------------------------------------------- 
+ | Product Name  | Color | Season | Price | Id |
+ ----------------------------------------------- 
+ | Blue Bathrobe | Blue  | Winter | 17,08 | 27 |
+ ----------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+ | Blue Winter | 5    |
+ ---------------------- 
+
+ Count: 2
+Price after all discounts: 14,6
+
+
+ ---------------------------------------------- 
+ | Product Name | Color | Season | Price | Id |
+ ---------------------------------------------- 
+ | Brown Poncho | Brown | Winter | 81,71 | 29 |
+ ---------------------------------------------- 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 73,54
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Brown Leggings | Brown | Winter | 66,44 | 33 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 59,8
+
+
+ ------------------------------------------------ 
+ | Product Name   | Color | Season | Price | Id |
+ ------------------------------------------------ 
+ | Brown Swimsuit | Brown | Winter | 45,25 | 36 |
+ ------------------------------------------------ 
+
+ Count: 1
+ ---------------------- 
+ | Discounts   | Rate |
+ ---------------------- 
+ | Winter Sale | 10   |
+ ---------------------- 
+
+ Count: 1
+Price after all discounts: 40,72
+
+
+
+-------------FILTERS------------
+Filtered by season - Winter
+--------------------------------
+
+
+----------Offers Menu----------
+1. Add filter by season
+2. Add filter by phrase
+3. Add filter by color
+4. Sort ascending by name
+5. Sort descending by name
+6. Sort ascending by price
+7. Sort descending by price
+8. Reset filters
+9. Back
+--------------------------------
+-----------Main Menu-----------
+1. Catalog
+2. Discounts
+3. Offers for specified date
+4. Products statistics
+5. Exit
+-------------------------------

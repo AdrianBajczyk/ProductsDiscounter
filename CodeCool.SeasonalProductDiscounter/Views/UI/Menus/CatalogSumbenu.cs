@@ -6,31 +6,34 @@ using CodeCool.SeasonalProductDiscounter.Ui.Logger;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Getter;
 using CodeCool.SeasonalProductDiscounter.Views.UI.Printer;
 
-namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus.CatalogSubmenu;
+namespace CodeCool.SeasonalProductDiscounter.Views.UI.Menus;
 
-public class CatalogSumbenu : ICatalogSubmenu
+public class CatalogSumbenu : AbstractMenu 
 {
-    private readonly ILogger _consoleLogger;
-    private readonly IUIGetter _uIGetter;
-    private readonly IUIPrinter _uIPrinter;
-    private readonly IProductProvider _productProvider;
     private readonly IProductBrowser _productBrowser;
+
 
     private IEnumerable<Product> _products;
     private List<string> _filterNames = new();
 
-    public CatalogSumbenu(SortedList<string,ILogger> loggers, IUIGetter uIGetter, IUIPrinter uIPrinter, IProductProvider productProvider, IProductBrowser productBrowser)
+    public CatalogSumbenu(string title,bool needsAutification,IProductBrowser productBrowser)
+        : base(title, needsAutification)
     {
-        _consoleLogger = loggers["consoleLogger"];
-        _uIGetter = uIGetter;
-        _uIPrinter = uIPrinter;
-        _productProvider = productProvider;
         _productBrowser = productBrowser;
-
         _products = _productProvider.Products;
+
     }
 
-    public void Run()
+    public override void Display()
+    {
+        foreach(var log in _loggers ) 
+        {
+            log.Value.LogInfo(Title);
+        }
+        Run();
+    }
+
+    private void Run()
     {
         int select = 0;
 
@@ -46,92 +49,92 @@ public class CatalogSumbenu : ICatalogSubmenu
             {
                 case 1:
                     var dateFromUser = _uIGetter.GetDateFromUser();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     var chosenSeason = SeasonExtensions.GetSeason(dateFromUser);
                     _products = _productBrowser.GetProductsFromSpecificSeason(_products, chosenSeason);
                     _filterNames.Add($"Filtered by season - {chosenSeason}");
                     break;
                 case 2:
                     var phraseFromUser = _uIGetter.GetPhraseFromUser();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.GetProductsWithNameContainingGivenString(_products, phraseFromUser);
                     _filterNames.Add($"Names filtered with phrase - {phraseFromUser}");
                     break;
                 case 3:
                     var colorFromUser = _uIGetter.GetColorFromUser();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.GetProductsWithSpecificColor(_products, colorFromUser);
                     _filterNames.Add($"Filtered by color - {colorFromUser}");
                     break;
                 case 4:
                     var priceSmallerThan = _uIGetter.GetPriceFromUser();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.GetByPriceSmallerThan(_products, priceSmallerThan);
                     _filterNames.Add($"Filtered by price smaller than - {priceSmallerThan}");
                     break;
                 case 5:
                     var priceGreaterThan = _uIGetter.GetPriceFromUser();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.GetByPriceGreaterThan(_products, priceGreaterThan);
                     _filterNames.Add($"Filtered by price smaller than - {priceGreaterThan}");
                     break;
                 case 6:
                     var priceRange = _uIGetter.GetPriceRangeFromUser();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.GetByPriceRange(_products, priceRange);
                     _filterNames.Add($"Filtered by price greater than {priceRange.Minimum} and smaller than {priceRange.Minimum}");
                     break;
                 case 7:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     var productsGroupedByName = _productBrowser.GroupByName(_products);
                     _uIPrinter.PrintGroupedProducts(productsGroupedByName);
                     _uIGetter.GetKeyToContinue();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     break;
                 case 8:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     var productsGroupedBySeason = _productBrowser.GroupBySeason(_products);
                     _uIPrinter.PrintGroupedProducts(productsGroupedBySeason);
                     _uIGetter.GetKeyToContinue();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     break;
                 case 9:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     var productsGroupedByColor = _productBrowser.GroupByColor(_products);
                     _uIPrinter.PrintGroupedProducts(productsGroupedByColor);
                     _uIGetter.GetKeyToContinue();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     break;
                 case 10:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     var productsGroupedByPriceRange = _productBrowser.GroupByPriceRange(_products);
                     _uIPrinter.PrintGroupedProducts(productsGroupedByPriceRange);
                     _uIGetter.GetKeyToContinue();
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     break;
                 case 11:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.SortAscendingByName(_products);
                     break;
                 case 12:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.SortDescendingByName(_products);
                     break;
                 case 13:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.SortAscendingByPrice(_products);
                     break;
                 case 14:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productBrowser.SortDescendingByPrice(_products);
                     break;
                 case 15:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productProvider.Products;
                     _filterNames.Clear();
                     break;
                 case 16:
-                    _consoleLogger.Clear();
+                    _loggers["consoleLogger"].Clear();
                     _products = _productProvider.Products;
                     _filterNames.Clear();
                     break;
@@ -141,6 +144,7 @@ public class CatalogSumbenu : ICatalogSubmenu
             }
         }
     }
+
 
     private void DisplayAddedFilters()
     {
